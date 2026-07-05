@@ -1,18 +1,35 @@
-# Token Gateway
+# Token Gateway — DeepSeek API via PayPal (No Chinese Phone Required)
 
-A lightweight API gateway that provides access to DeepSeek models via PayPal payments — no Chinese phone number or local payment methods required.
+🌐 **https://token.mall199.com**
 
-🌐 **Live site:** https://token.mall199.com
+[![DeepSeek API](https://img.shields.io/badge/DeepSeek-API-blue)](https://token.mall199.com)
+[![PayPal](https://img.shields.io/badge/Payment-PayPal-00457C)](https://token.mall199.com)
+[![OpenAI Compatible](https://img.shields.io/badge/OpenAI-Compatible-green)](https://token.mall199.com)
 
-## Features
+---
 
-- 🔌 **OpenAI API Compatible** — Use any OpenAI SDK, just change the base URL
-- ⚡ **DeepSeek V4 Flash & Pro** — Fast and powerful models
-- 💳 **PayPal Payments** — No WeChat, no Alipay, no Chinese phone number
-- 🔐 **API Key Authentication** — Secure and trackable usage
-- 📊 **Dashboard** — Real-time usage and balance tracking
+## 🚀 What is Token Gateway?
 
-## Quick Start
+**Token Gateway** is a lightweight API proxy that gives international developers access to **DeepSeek's powerful LLM models** — without needing a Chinese phone number, WeChat, or Alipay.
+
+**Pay with PayPal. Start building in minutes.**
+
+---
+
+## ✨ Why Token Gateway?
+
+| Problem | Solution |
+|---------|----------|
+| ❌ DeepSeek requires Chinese phone number | ✅ **No phone number needed** |
+| ❌ Only WeChat/Alipay accepted | ✅ **PayPal payments only** |
+| ❌ Complex signup process | ✅ **Sign up & get API key instantly** |
+| ❌ Need to rewrite SDK code | ✅ **OpenAI API compatible — drop-in replacement** |
+
+---
+
+## 🔌 OpenAI Compatible
+
+Use any OpenAI SDK. Just change the base URL and API key:
 
 ```python
 from openai import OpenAI
@@ -29,38 +46,65 @@ response = client.chat.completions.create(
 print(response.choices[0].message.content)
 ```
 
-## Pricing
+Works with **Python, Node.js, Go, curl, LangChain, LlamaIndex** — any OpenAI-compatible client.
+
+---
+
+## 💰 Pricing
 
 | Model | Input (per 1M tokens) | Output (per 1M tokens) |
 |-------|----------------------|-----------------------|
-| DeepSeek V4 Flash | $0.50 | $1.00 |
-| DeepSeek V4 Pro | $1.50 | $3.00 |
+| ⚡ **DeepSeek V4 Flash** | $0.50 | $1.00 |
+| 🧠 **DeepSeek V4 Pro** | $1.50 | $3.00 |
 
-$1 starter package available. No subscription. Balance never expires.
+- 🎯 **$1 starter package** — try before you commit
+- 💸 **No subscription**, no monthly fees
+- ⏳ **Balance never expires**
+- 📊 **Real-time usage dashboard**
 
-## Tech Stack
+---
+
+## 🛠 How It Works
+
+```
+1. Sign up → Get your API key
+2. Top up balance with PayPal
+3. Use any OpenAI SDK with our base URL
+4. Done. 🎉
+```
+
+---
+
+## 🏗 Tech Stack
 
 - **Backend:** Python (FastAPI)
 - **Database:** SQLite
 - **Payments:** PayPal REST API
 - **Deployment:** VPS + Cloudflare Tunnel
 
-## Project Structure
+---
 
-```
-├── app/
-│   ├── main.py          # Main application
-│   ├── auth.py          # Authentication
-│   ├── proxy.py         # API proxy logic
-│   ├── payment.py       # PayPal integration
-│   ├── db.py            # Database management
-│   └── models.py        # Data models
-├── static/              # Frontend assets
-├── data/                # Configuration
-├── Dockerfile
-└── requirements.txt
-```
+## ❓ FAQ
 
-## License
+**Q: Do I need a Chinese phone number?**
+A: No. Just a PayPal account. That's the whole point.
 
-MIT
+**Q: Can I use my existing OpenAI code?**
+A: Yes. Change `base_url` to `https://token.mall199.com/v1` and your API key. No code changes.
+
+**Q: How do I get my API key?**
+A: Instantly after PayPal payment confirmation.
+
+**Q: What if I run out of balance?**
+A: API returns 402 error. Top up anytime — no minimum amount.
+
+---
+
+## 🔗 Links
+
+- 🌐 **Website:** https://token.mall199.com
+- 📧 **Support:** support@token.mall199.com
+
+---
+
+*Built for developers who need access to great AI models without regional restrictions.*
